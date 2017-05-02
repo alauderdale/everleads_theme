@@ -23,10 +23,11 @@
   color: #BAC3CA!important;
 }
 
+//contact form 7
 
 span.wpcf7-not-valid-tip{
     font-size:.8em!important;
-    margin-top:10px;
+    margin-top:5px;
 }
 
 div.wpcf7-response-output{
@@ -34,6 +35,7 @@ div.wpcf7-response-output{
 	font-size:.9em;
 	text-align:center;
 	color:#666;
+	margin:0 18px 20px 18px;
 }
 
 div.wpcf7-validation-errors{
@@ -44,4 +46,9 @@ div.wpcf7-validation-errors{
 div.wpcf7-mail-sent-ok{
 	border:none;
 	background:tint(#398f14,80%);
+}
+
+div.wpcf7 .ajax-loader{
+	display:block;
+	margin:10px auto;
 }
