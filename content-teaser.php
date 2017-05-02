@@ -11,16 +11,20 @@
             <div class='row text-center navy-layer'>
               <img src='<?php bloginfo('template_url'); ?>/images/<?php echo $selectedBg; ?>' width='110'>
             </div>
-            <div class='row'>
-              <h6 class='text-uppercase bold-font-name text-center half-padding-top'>
-                Ready To Get Started
-              </h6>
-            </div>
-            <div class='row text-center'>
-              <h3>
-                You’re going to be amazing
-              </h3>
-            </div>
+            <?php $teaserLoop = new WP_Query( array('post_type' => 'teaser', 'posts_per_page' => 1) ); ?>
+              <?php while ( $teaserLoop->have_posts() ) : $teaserLoop->the_post(); ?>
+                <div class='row'>
+                <h6 class='text-uppercase bold-font-name text-center half-padding-top'>
+                  <?php the_title();?>
+                </h6>
+                </div>
+                <div class='row text-center'>
+                  <h3>
+                    <?php the_excerpt();?>
+                  </h3>
+                </div>
+              <?php wp_reset_postdata(); ?>
+            <?php endwhile; // end of the loop. ?>
             <div class='row text-center margin-bottom'>
               <a class='btn btn-primary btn-shadow btn-strech margin-top' href='<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>'>
                 Contact sales

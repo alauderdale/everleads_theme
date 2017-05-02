@@ -5,14 +5,14 @@
 
 function create_my_post_types() {
 
-    //add media
+    //add teaser
     $port_args = array(
       'public' => true,
-      'label'  => 'Media',
+      'label'  => 'Teaser',
       'taxonomies' => array('category'), 
       'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' )
     );
-    register_post_type( 'media', $port_args );
+    register_post_type( 'teaser', $port_args );
     
 }
 
