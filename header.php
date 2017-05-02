@@ -24,6 +24,8 @@
 
 <?php wp_head(); ?>
 
+
+
 </head>
 <body class='index'>
   <nav class='navbar navbar-default navbar-fixed-top global-nav'>

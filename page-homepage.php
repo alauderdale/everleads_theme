@@ -157,7 +157,6 @@ Template Name: Home
         <div class='row'>
         	<?php if( have_rows('features_bullets') ): ?>
           <?php 
-	          $number = 1;
 	          while( have_rows('features_bullets') ): the_row(); 
 	          // vars
 	          $title = get_sub_field('title');

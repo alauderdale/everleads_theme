@@ -6,7 +6,6 @@
  */
 ?>
 
-
       <footer class='primary-footer'>
         <section>
           <div class='container'>

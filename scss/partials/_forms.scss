@@ -22,3 +22,26 @@
 :-moz-placeholder { /* Firefox 18- */
   color: #BAC3CA!important;
 }
+
+
+span.wpcf7-not-valid-tip{
+    font-size:.8em!important;
+    margin-top:10px;
+}
+
+div.wpcf7-response-output{
+	padding:10px;
+	font-size:.9em;
+	text-align:center;
+	color:#666;
+}
+
+div.wpcf7-validation-errors{
+	border:none;
+	background:tint(#f7e700,80%);
+}
+
+div.wpcf7-mail-sent-ok{
+	border:none;
+	background:tint(#398f14,80%);
+}
