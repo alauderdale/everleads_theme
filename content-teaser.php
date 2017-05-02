@@ -1,7 +1,15 @@
+<?php
+  $bg = array('everlead-lightbulb.png', 'everlead-roll.png', 'everlead-data.png' ); // array of filenames
+
+  $i = rand(0, count($bg)-1); // generate random number size of the array
+  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+?>
+
+
         <section class='inverse-section bg-cover home-footer-bg'>
           <div class='container'>
             <div class='row text-center navy-layer'>
-              <img src='<?php bloginfo('template_url'); ?>/images/everlead-lightbulb.png' width='124'>
+              <img src='<?php bloginfo('template_url'); ?>/images/<?php echo $selectedBg; ?>' width='124'>
             </div>
             <div class='row'>
               <h6 class='text-uppercase bold-font-name text-center half-padding-top'>
